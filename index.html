@@ -62,17 +62,18 @@
                 </div>
             </div>
             <h3 class="total">total: $56.97</h3>
-            <a href="#" class="btn">checkout cart</a>
+            <a href="#" class="btn" onclick="getlocation()">checkout cart</a>
+            <p id="demo"></p>
         </div>
         <form action="" class="login-form">
             <h3>login form</h3>
-            <input type="email" placeholder="enter your email" class="box">
-            <input type="password" placeholder="enter your password" class="box">
+            <input type="email" placeholder="enter your email" class="box" id="email" required>
+            <input type="password" placeholder="enter your password" class="box" id="password" required>
             <div class="remember">
                 <input type="checkbox" name="" id="remember-me">
                 <label for="remember-me">remember me</label>
             </div>
-            <input type="submit" value="login" class="btn">
+            <input type="submit" value="login" class="btn" onclick="popup()">
         </form>
     </header>
     <!-- header end -->
