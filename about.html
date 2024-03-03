@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- swiper cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="style.css">
+    <style >
+            
+   .background{
+    color: #fff;
+   }
+    
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+    </style>
+
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="header">
+        <a href="index.html" class="logo"><i class="fa-solid fa-pizza-slice"></i>pizza</a>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="">About</a>
+            <a href="">Menu</a>
+            <a href="">Gallery</a>
+            <a href="">Contact</a>
+        </nav>
+        <div class="icons">
+            <div id="cart" class="fa-solid fa-shopping-cart"></div>
+            <div id="user" class="fa-solid fa-user"></div>
+            <div id="menu" class="fa-solid fa-bars"></div>
+        </div>
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="136531002_95af3cd3-85de-4f17-92e8-647af7967071-removebg-preview.png" alt="">
+                <div class="content">
+                    <h3>pizza</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">$ 18.99</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="138792500_0276f102-304d-4a62-90b3-ec9a942e5b36-removebg-preview.png" alt="" width="">
+                <div class="content">
+                    <h3>pizza</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">$ 18.99</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="78179037_Freshly_baked_pizza_with_a_cut_slice_isolated_-4-removebg-preview.png" alt="">
+                <div class="content">
+                    <h3>pizza</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">$ 18.99</span>
+                </div>
+            </div>
+            <h3 class="total">total: $56.97</h3>
+            <a href="#" class="btn" onclick="getlocation()">checkout cart</a>
+            <p id="demo"></p>
+        </div>
+        <form action="" class="login-form">
+            <h3>login form</h3>
+            <input type="email" placeholder="enter your email" class="box" id="email" required>
+            <input type="password" placeholder="enter your password" class="box" id="password" required>
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+            <input type="submit" value="login" class="btn" onclick="popup()">
+        </form>
+    </header>
+    <!-- header end -->
+
+    <div class="heading">
+        <h1>about us</h1>
+        <p><a href="index.html">Home >>></a> about</p>
+
+    </div>
+<section class="about">
+    <div class="row">
+        <div class="image">
+            <img src="Pizza maker-amico.png" alt="">
+        </div>
+    <div class="content">
+        <H3> Welcome to our <span>Pizza</span>shop</H3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur iste </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur iste </p>
+        <a href="#" class="btn">read more</a>
+    </div>
+</section>
+  <!-- blog section starts -->
+
+<section class="blog">
+    <h1 class="title">our<span>blogs</span></h1>
+ >
+       
+            <div class="box-container">
+                <div class="box">
+                    <img src="blog 1.jpg" height="20%" width="" alt="">
+                    <div class="icon">
+                        <a href="blog text"> <span> june 2023</span></a>
+                        <a href="#"><i class="fas fa-user">by admin</i></a>
+                    </div>
+                    <h3> Slices of Delight : The Exploring The World Of Pizza"</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. , impedit quisquam, veritatis nisi officia qui sapiente non nihil, a amet ipsam minus? Modi commodi deserunt repellendus temporibus.</p>
+                <a href="#" class="btn">read more</a>
+                </div>
+            
+
+                <div class="box-container">
+                    <div class="box">
+                        <img src="victor-rodriguez-iglesias-zTG8dSz10tQ-unsplash.jpg" height="20%" width="" alt="">
+                        <div class="icon">
+                            <a href="#"><i class="fas fa-calender">05 june , 2023</i></a>
+                            <a href="#"><i class="fas fa-user">by admin</i></a>
+                        </div>
+                        <h3> Slices of Delight : The Exploring The World Of Pizza"</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. , impedit quisquam, veritatis nisi officia qui sapiente non nihil, a amet ipsam minus? Modi commodi deserunt repellendus temporibus.</p>
+                    <a href="#" class="btn">read more</a>
+                    </div>
+            
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+    <!-- footer section starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>find us here</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione </p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>contact us</h3>
+                <p>+123-456-7890</p>
+                <a href="" class="link">applenet@gmail.com</a>
+            </div>
+            <div class="box">
+                <h3>localization</h3>
+                <p>230 points of dr <br>
+                colarode strings united states</p>
+            </div>
+        </div>
+        <div class="credit">created by <span>team Hadiya</span> | all rights reserved</div>
+   </section>
+    <!-- footer section ends -->
+
+    <!-- custom js link -->
+    <script src="script.js">
+    </script>
