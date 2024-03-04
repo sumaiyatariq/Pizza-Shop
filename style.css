@@ -399,6 +399,200 @@ section {
   text-decoration: line-through;
 }
 /* ends */
+/* About us */
+.about .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.about .row .image{
+  flex: 1 1 32rem;
+}
+
+.about .row .image img{
+  width: 100%;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+}
+
+.about .row .content{
+  flex: 1 1 50rem;
+}
+
+.about .row .content h3{
+  font-size: 3.5rem;
+  color: #130f40;
+}
+
+.about .row .content h3 span{
+  color: #ff7800;
+}
+
+.about .row .content p{
+  font-size: 1.6rem;
+  color: #666;
+  padding: 2rem 0;
+  line-height: 1;
+}
+
+/* end */
+/* blogs */
+.blog .box-container {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+.blog .box-container .box {
+  box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background: #eee;
+}
+.blog .box-container .box img {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+}
+.blog .box-container .box h3 {
+  padding: 2rem;
+  font-size: 2.5rem;
+}
+.blog .box-container .box p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.blog .box-container .box .icon a{
+  margin-bottom: 1rem;
+  color: #ff7800;
+  font-size: 1.2rem;
+}
+
+/* end */
+
+/* menu */
+
+.menu .slide .title{
+  padding: 1rem;
+  font-size: 3rem;
+  color: #fff;
+  background: #ff7800;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.menu .slide .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 4rem;
+}
+
+.menu .slide .box-container .box{
+  flex: 1 1 38rem;
+  background: #eee;
+  padding: 2rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.menu .slide .box-container .box h3{
+  font-size: 2.2rem;
+  color: #130f40;
+  padding-bottom: .5rem;
+}
+
+.menu .slide .box-container .box p{
+  font-size: 1.4rem;
+  color: #666;
+  line-height: 2;
+}
+
+.menu .slide .box-container .box .price{
+  font-size: 2.2rem;
+  color: #ff7800;
+}
+
+.menu .slide .box-container .box:hover{
+  cursor: pointer;
+  transform: scale(.9);
+}
+
+/* end */
+
+/* menu-preview-container */
+
+.menu-preview-container{
+  background: rgba(0,0,0,0.7);
+  position: fixed;
+  top: 0; left: 0;
+  height: 100%; width: 100%;
+  z-index: 1100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-preview-container .menu-preview{
+  text-align: center;
+  background: #fff;
+  padding: 3rem 2rem;
+  border-radius: .5rem;
+  display: none;
+  width: 35rem;
+}
+
+.menu-preview-container .menu-preview.active{
+  display: inline-block;
+}
+
+.menu-preview-container .menu-preview h3{
+  padding: 1rem 0;
+  font-size: 2.5rem;
+  color: #130f40;
+}
+
+.menu-preview-container .menu-preview .stars{
+  margin-top: .5rem;
+}
+
+.menu-preview-container .menu-preview .stars i{
+  font-size: 1.7rem;
+  color: #ff7800;
+}
+
+.menu-preview-container .menu-preview p{
+  font-size: 1.6rem;
+  color: #666;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.menu-preview-container .menu-preview .price{
+  font-size: 2.5rem;
+  color: #130f40;
+  margin-bottom: .5rem;
+}
+
+#close{
+  position: absolute;
+  top: 1.5rem; right: 2.5rem;
+  font-size: 6rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+#close:hover{
+  transform: rotate(90deg);
+  color: #ff7800;
+}
+
+/* end */
 
 /* gallery */
 

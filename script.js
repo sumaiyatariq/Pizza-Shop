@@ -32,22 +32,49 @@ var swiper = new Swiper(".home-slider", {
     prevEl: ".swiper-button-prev",
   },
 });
-const x = document.getElementById("demo");
 
-function getlocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-    x.innerHTML = "Geolocation is not supported by this browser";
-  }
+// menu 
+window.onscroll = () =>{
+  cart.classList.remove('active');
+  login.classList.remove('active');
+  navbar.classList.remove('active');
 }
-function showPosition(position) {
-  x.innerHTML =
-    "Latitude: " +
-    position.coords.latitude +
-    "<br>Longitude: " +
-    position.coords.longitude;
-}
+
+var swiper = new Swiper(".menu-slider", {
+  grabCursor:true,
+  loop: true,
+  autoHeight:true,
+  centeredSlides:true,
+  spaceBetwwen:20,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+});
+
+let previewContainer = document.querySelector('.menu-preview-container');
+let previewBox = previewContainer.querySelectorAll('.menu-preview');
+
+document.querySelectorAll('.menu .box').forEach(menu =>{
+  menu.onclick = () =>{
+    previewContainer.style.display = 'flex';
+    let name = menu.getAttribute('data-name');
+    previewBox.forEach(preview =>{
+      let target = preview.getAttribute('data-target');
+      if(name == target){
+        preview.classList.add('active');
+      }
+    });
+  };
+});
+
+previewContainer.querySelector('#close').onclick = () =>{
+  previewContainer.style.display = 'none';
+  previewBox.forEach(close =>{
+    close.classList.remove('active');
+  });
+};
+
 function validateForm() {
   const cname = document.getElementById("cname").value;
   const cemail = document.getElementById("cemail").value;
