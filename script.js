@@ -33,6 +33,7 @@ var swiper= new Swiper(".home-slider",{
           prevEl: '.swiper-button-prev',
         },
 })
+
 const x = document.getElementById("demo");
 
 function getlocation() {
@@ -47,4 +48,37 @@ function showPosition(position) {
      "<br>Longitude: " + position.coords.longitude;
    }
 
+   var swiper= new Swiper(".menu-slider",{
+     grabcursor:true,
+     loop:true,
+     autoHeight:true,
+     centeredSlides:true,
+     spaceBetween:20,
+     pagination: {
+         el: '.swiper-pagination',
+         clickable:true,
+        },
+})
+
+let previewContainer = document.querySelector('.menu-preview-container');
+let previewbox = document.querySelectorAll('.menu-preview');
+
+document.querySelectorAll('.menu .box').forEach(menu => {
+  menu.onclick =() => {
+     previewContainer.style.display = 'flex';
+     let name = menu.getAttribute('data-name');
+     previewbox.forEach(preview => {
+          let target= preview.getAttribute('data-target');
+          if (name == target){
+               preview.classList.add('active')
+          }
+     })
+  }
+})
    
+previewContainer.querySelector('#close').onclick = () =>{
+     previewContainer.style.display ='none';
+     previewbox.forEach(close =>{
+          close.classList.remove('active')
+     })
+}
