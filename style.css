@@ -742,7 +742,16 @@ section {
   height: 15rem;
   resize: none;
 }
-
+.error-message {
+  color: red !important;
+  font-size: 13px !important;
+  text-align: left;
+  margin-left: 15px;
+  display: block;
+}
+.error-field {
+  border: 1px solid red !important;
+}
 /* end */
 
 /* footer starts */
@@ -791,6 +800,7 @@ section {
   padding: 0.5rem 0;
   display: block;
   text-decoration: underline;
+  text-transform: none;
 }
 .footer .box-container .box .link:hover {
   color: #ff7800;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Pizza Shop</title>
     <!-- font awesome cdn link  -->
     <link
       rel="stylesheet"
@@ -74,8 +74,8 @@
 
       <form action="" class="login-form">
         <h3>Login form</h3>
-        <input type="email" placeholder="enter your email" class="box" />
-        <input type="password" placeholder="enter your password" class="box" />
+        <input type="email" placeholder="enter your email" class="box" required/>
+        <input type="password" placeholder="enter your password" class="box" required/>
         <div class="remember">
           <input type="checkbox" name="" id="remember-me" />
           <label for="remember-me">Remember me</label>
@@ -118,60 +118,57 @@
 
       <div class="row">
         <form
-          name="contactForm"
-          action=""
-          onsubmit="return validateForm()"
-          method="post"
+        name="contactForm" onsubmit="return validateForm()" method="post"
         >
           <h3>let's contact with us</h3>
           <div class="inputBox">
             <div class="inner-inputBox">
               <input
-                id="cname"
+                id="name" name="name" oninput="validateField('name')"
                 type="text"
                 placeholder="Enter your name"
                 class="box"
               />
-              <span class="error" id="name-error"></span>
+              <span id="nameError" class="error-message"></span>
             </div>
             <div class="inner-inputBox">
               <input
-                id="cemail"
+                id="email" name="email" oninput="validateField('email')"
                 type="email"
                 placeholder="Enter your email"
                 class="box"
               />
-              <span class="error" id="email-error"></span>
+              <span id="emailError" class="error-message"></span>
             </div>
           </div>
           <div class="inputBox">
             <div class="inner-inputBox">
               <input
-                id="cnumber"
+                id="phone" name="phone" oninput="validateField('phone')"
                 type="number"
-                placeholder="Enter your number"
+                placeholder="Enter your phone number"
                 class="box"
               />
-              <span class="error" id="number-error"></span>
+              <span id="phoneError" class="error-message"></span>
             </div>
             <div class="inner-inputBox">
               <input
-                id="csubject"
+                id="subject" name="subject" oninput="validateField('subject')"
                 type="text"
                 placeholder="Enter your subject"
                 class="box"
               />
-              <span class="error" id="subject-error"></span>
+              <span id="subjectError" class="error-message"></span>
             </div>
           </div>
           <div class="inputBox-msg">
             <textarea
-              id="cmessage"
+              id="message" name="message" oninput="validateField('message')"
               placeholder="Your message"
               cols="30"
               rows="10"
             ></textarea>
-            <span class="error" id="message-error"></span>
+            <span id="messageError" class="error error-message"></span>
           </div>
           <div class="inputBox">
             <input type="submit" value="Send message" class="btn" />
@@ -202,7 +199,7 @@
         <div class="box">
           <h3>contact us</h3>
           <p>+123-456-7890</p>
-          <a href="#" class="link">1968asifali@gmail.com</a>
+          <a href="mailto:1968asifali@gmail.com" class="link">1968asifali@gmail.com</a>
         </div>
 
         <div class="box">
